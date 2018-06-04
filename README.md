@@ -2,7 +2,7 @@
 Small app for analyze web pages, in a scalable way using microservices approach
 
 ## Build using Docker
-- You need latest or abmove `Docker` `version 17` and above and `docker-compose` `version 1.14`
+- You need latest or version of `Docker` `version 17` or above and `docker-compose` `version 1.14` or above
 - `docker-compose up --build -d` should run the app
 - If you are running a docker-machine, which has different IP, you might want to edit proxy property of webapp to point to correct docker-machine IP, before building the images to suit to your docker-machine IP address
 	i.e.,
