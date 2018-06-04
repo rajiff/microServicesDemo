@@ -1,0 +1,6 @@
+const worker = require('../api/v1/extractorWorker/');
+const registerWorker = require('../registerWorker');
+const config = require('../config');
+const mongoConn = require('../mongoConnection')();
+
+registerWorker(config.EVENTS.NEW_WEBDOCUMENT_ADDED, worker);

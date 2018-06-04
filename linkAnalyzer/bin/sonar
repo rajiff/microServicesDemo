@@ -1,0 +1,6 @@
+const worker = require('../api/v1/linkSonar/');
+const registerQueueWorker = require('../registerQueueWorker');
+const config = require('../config');
+const mongoConn = require('../mongoConnection')();
+
+registerQueueWorker(config.EVENTS.WEBDOCUMENT_LINK_EXTRACTED, worker);
